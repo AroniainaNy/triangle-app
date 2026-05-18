@@ -1,11 +1,11 @@
 package com.triangle;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class TriangleTest {
     Triangle t = new Triangle();
-
+    // test wehook
     @Test
     public void testEquilateral() {
         assertEquals("Equilateral", t.getType(3, 3, 3));
