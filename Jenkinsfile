@@ -21,4 +21,11 @@ pipeline {
             }
         }
     }
+    post {
+        failure {
+            emailext body: 'Ce Build $BUILD_NUMBER a échoué',
+                     subject: 'Build Jenkins Echoué',
+                     to: 'mahatsangy.rjl@gmail.com'
+        }
+    }
 }
